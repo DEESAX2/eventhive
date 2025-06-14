@@ -1,11 +1,13 @@
 import React from "react";
 import notFoundImage from "../assets/images/notfound.png";
-// import Footer from "../components/Footer.jsx";
+import Footer from "../components/Footer.jsx";
 import { FaInstagram, FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
+import CollegeEvents from "../components/CollegeEvents.jsx";
 
 export default function NotFound() {
     return (
-        <div className="min-h-screen flex flex-col justify-between bg-gray-100">
+        <div>
+        <div className="min-h-screen flex flex-col justify-between bg-white">
             {/* Navbar */}
             <header className="flex justify-between items-center px-8 py-4 bg-white shadow">
                 <h1 className="text-2xl font-bold">Event <span className="text-[#7848F4]">Hive</span></h1>
@@ -45,6 +47,9 @@ export default function NotFound() {
                 </div>
             </footer>
         </div>
+        <Footer/>
+        </div>
+
         
     );
 }

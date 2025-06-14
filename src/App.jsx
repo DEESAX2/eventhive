@@ -6,6 +6,7 @@ import ViewEvent from "./pages/ViewEvent"
 import ViewCollege from "./pages/ViewCollege"
 import CreateEvent from "./pages/CreateEvent"
 import NotFound from "./pages/NotFound"
+import CollegeEvents from "./components/CollegeEvents"
 
 const eventHiveRouter = createBrowserRouter([
   { path: '/', element: <Home /> },
@@ -14,6 +15,7 @@ const eventHiveRouter = createBrowserRouter([
   { path: '/view-event', element: <ViewEvent /> },
   { path: '/view-college', element: <ViewCollege /> },
   { path: '/create-event', element: <CreateEvent /> },
+  { path: '/college-events', element: <CollegeEvents /> },
   { path: '*', element: <NotFound /> },
 ]);
 
