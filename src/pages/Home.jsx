@@ -64,7 +64,7 @@ export default function Home() {
                             { src: spotify, alt: "Brand Spotify Logo" },
                             { src: google, alt: "Brand Google Logo" },
                             { src: stripe, alt: "Brand Stripe Logo" },
-                            { src: youtube, alt: "Brand Youtube Logo" },
+                            { src: youtube, alt: "Brand Youtube Logo" }, 
                             { src: microsoft, alt: "Brand Microsoft Logo" },
                             { src: medium, alt: "Brand Medium Logo" },
                             { src: zoom, alt: "Brand Zoom Logo" },
@@ -81,7 +81,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <TrendingColleges />
+            <TrendingColleges/>
             <OurBlogs />
             <Footer />
         </>
