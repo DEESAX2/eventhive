@@ -7,14 +7,13 @@ export default function Login() {
     return (
 
         <div>
-            <div className="flex min-h-screen bg-white"> {/* Main container: flex row, full screen height, white background */}
+            <div className="flex min-h-screen bg-white">
+                {/* Left Column: Login In Form */}
+                <div className="w-1/2 flex flex-col justify-center items-center p-8 lg:p-16"> 
+                    <h4 className="text-2xl font-bold mb-8 text-black">Event Hive</h4> 
+                    <h1 className="text-4xl font-semibold mb-16 text-black">Sign In to Event Hive</h1> 
 
-                {/* Left Column: Sign In Form */}
-                <div className="w-1/2 flex flex-col justify-center items-center p-8 lg:p-16"> {/* Half width, flex column, center content, padding */}
-                    <h4 className="text-2xl font-bold mb-8 text-black">Event Hive</h4> {/* Logo/Title */}
-                    <h1 className="text-4xl font-semibold mb-16 text-black">Sign In to Event Hive</h1> {/* Main Heading */}
-
-                    <form className="w-full max-w-sm"> {/* Form container, max width for input fields */}
+                    <form className="w-full max-w-sm"> 
                         <div className="mb-4">
                             <label htmlFor="email" className="block text-sm font-medium text-black mb-1">YOUR EMAIL</label>
                             <input
@@ -40,7 +39,7 @@ export default function Login() {
                             className="w-1/2 bg-event bg-purple-800 text-white py-2 rounded-md hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-event-purple-light focus:ring-opacity-50 transition-colors duration-200 m-20" >Sign In</button>
                     </form>
 
-                    <div className="flex items-center my-6 w-full max-w-sm"> {/* 'Or' separator */}
+                    <div className="flex items-center my-6 w-full max-w-sm"> 
                         <div className="flex-grow border-t border-gray-300"></div>
                         <span className="mx-4 text-black">Or</span>
                         <div className="flex-grow border-t border-gray-300"></div>
@@ -49,13 +48,11 @@ export default function Login() {
                     <button
                         className="w-full max-w-sm flex items-center justify-center border border-gray-300 py-2.5 rounded-md text-black hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-opacity-50 transition-colors duration-200"
                     >
-                        {/* Replace with an actual Google SVG icon or image */}
                         <img src="https://www.svgrepo.com/show/303108/google-icon-logo.svg" alt="Google icon" className="w-5 h-5 mr-2" />Sign Up with Google</button>
                 </div>
 
                 {/* Right Column: Image Section */}
                 <div className="w-1/2 relative flex items-center justify-center bg-event-purple-dark text-white p-8 overflow-hidden">
-                    {/* Image as background or positioned behind content */}
                     <img src={loginImage} alt="Login Image" className="absolute inset-0 w-full h-full object-cover z-0" />
 
                     <div className='absolute inset-0 bg-black z-10 opacity-50'></div>
