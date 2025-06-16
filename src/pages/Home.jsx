@@ -23,27 +23,26 @@ export default function Home() {
             <HeroWithFilter />
             <UpcomingEvents />
 
-            <section className="relative bg-navy-blue  mt-12">
-                <div className="container mx-auto px-4">
-                    <div className="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20 ">
+    <section className="relative bg-navy-blue  mt-12">
+        <div className="container mx-auto px-4">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20 ">
 
-                        <div className="w-[50%] md:w-2/5 lg:w-1/2 flex justify-center">
-                            <img src={banner} alt="Event Visual" className="w-full max-w-[544px] h-[350px] object-cover   transform -translate-y-8" />
-                        </div>
-                        <div className="w-full md:w-3/5 lg:w-1/2 text-center md:text-left">
-                            <h2 className="text-4xl md:text-big-heading font-bold leading-tight text-white mb-6">
-                                Make your own Event
-                            </h2>
-                            <p className="text-sub-heading text-grey mb-10 opacity-90 max-w-lg md:max-w-none mx-auto md:mx-0">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                            </p>
-                            <button className=" inline-block  px-10 py-4  bg-primary   text-white font-bold text-lg rounded-md  shadow-xl hover:brightness-110 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-[#7848F4] focus:ring-opacity-50"
-                            >
-                                Create Events
-                            </button>
-                        </div>
-                    </div>
+            <div className="w-[50%] md:w-2/5 lg:w-1/2 flex justify-center">
+                <img src={banner} alt="Event Visual" className="w-full max-w-[544px] h-[350px] object-cover   transform -translate-y-8" />
+            </div>
+            <div className="w-full md:w-3/5 lg:w-1/2 text-center md:text-left">
+                <h2 className="text-4xl md:text-big-heading font-bold leading-tight text-white mb-6">
+                    Make your own Event
+                </h2>
+                <p className="text-sub-heading text-grey mb-10 opacity-90 max-w-lg md:max-w-none mx-auto md:mx-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+                </p>
+                <button className=" inline-block  px-10 py-4  bg-primary   text-white font-bold text-lg rounded-md  shadow-xl hover:brightness-110 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-[#7848F4] focus:ring-opacity-50">
+                 Create Events
+                </button>
+                </div>
+                </div>
                 </div>
             </section>
 
@@ -62,15 +61,15 @@ export default function Home() {
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center justify-center">
 
                         {[
-                            { src: spotify, alt: "Brand A Logo" },
-                            { src: google, alt: "Brand B Logo" },
-                            { src: stripe, alt: "Brand C Logo" },
-                            { src: youtube, alt: "Brand D Logo" },
-                            { src: microsoft, alt: "Brand E Logo" },
-                            { src: medium, alt: "Brand F Logo" },
-                            { src: zoom, alt: "Brand G Logo" },
-                            { src: uber, alt: "Brand H Logo" },
-                            { src: grab, alt: "Brand I Logo" },
+                            { src: spotify, alt: "Brand Spotify Logo" },
+                            { src: google, alt: "Brand Google Logo" },
+                            { src: stripe, alt: "Brand Stripe Logo" },
+                            { src: youtube, alt: "Brand Youtube Logo" },
+                            { src: microsoft, alt: "Brand Microsoft Logo" },
+                            { src: medium, alt: "Brand Medium Logo" },
+                            { src: zoom, alt: "Brand Zoom Logo" },
+                            { src: uber, alt: "Brand Uber Logo" },
+                            { src: grab, alt: "Brand Grab Logo" },
                         ].map((brand, index) => (
                             <div
                                 key={index} className="flex justify-center items-center p-4">
