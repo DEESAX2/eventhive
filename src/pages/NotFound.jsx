@@ -34,11 +34,11 @@ export default function NotFound() {
             <footer className="flex flex-col items-center py-6 bg-white space-y-4">
                 <p className="text-gray-700">Follow us on</p>
                 <div className="flex space-x-4">
-                    <a href="#" className="bg-purple-100 text-[#7848F4] p-3 rounded-xl text-xl hover:bg-purple-200">
+                    <a href="https://www.instagram.com/i_am_duchess6?igsh=a3U5ZHRrM2s1ZnNx&utm_source=qr" className="bg-purple-100 text-[#7848F4] p-3 rounded-xl text-xl hover:bg-purple-200">
                         <FaInstagram /></a>
                     <a href="#" className="bg-purple-100 text-[#7848F4] p-3 rounded-xl text-xl hover:bg-purple-200">
                         <FaFacebookF /></a>
-                    <a href="#" className="bg-purple-100 text-[#7848F4] p-3 rounded-xl text-xl hover:bg-purple-200">
+                    <a href="https://www.linkedin.com/in/sandra-allotey-1266942a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className="bg-purple-100 text-[#7848F4] p-3 rounded-xl text-xl hover:bg-purple-200">
                         <FaLinkedinIn /></a>
                     <a href="#" className="bg-purple-100 text-[#7848F4] p-3 rounded-xl text-xl hover:bg-purple-200">
                         <FaTwitter /></a>

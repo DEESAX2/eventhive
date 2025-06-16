@@ -8,7 +8,7 @@ const CollegeDetail = () => {
         <img
           src={sandra}
           alt="IIT Roorkee"
-          className="w-[1320px] h-[595px] object-cover" />
+          className="w-full object-cover" />
         <div className="p-6">
           <h1 className="text-3xl font-bold mb-4 text-gray-800">IIT Roorkee</h1>
           {[...Array(4)].map((_, index) => (

@@ -1,10 +1,22 @@
-export default function EventCard() {
-    return (
-        <div>
-            <img src={'https://plus.unsplash.com/premium_photo-1661306437817-8ab34be91e0c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZXZlbnRzfGVufDB8fDB8fHww'} alt="Event Card" />
-            <h1>BestSelller Book Bootcamp -write, Market & Publish Your Book -Lucknow</h1>
-            <h2>Saturdat, March 18, 9.30PM</h2>
-            <h3>ONLINE EVENT - Attend anywhere</h3>
-        </div>
-    );
+export default function EventCard({ event }) {
+  return (
+    <div key={event.id} className="bg-white rounded-lg shadow p-4">
+      {/* FREE Badge */}
+      <div className="mb-4 relative">
+        <span className="absolute top-2 left-2 bg-purple-100 text-[#7848F4] text-xs px-2 py-1 rounded">
+          FREE
+        </span>
+        <img
+          src={event.image}
+          alt="Event"
+          className="w-full h-48 object-cover rounded"
+        />
+      </div>
+
+      {/* Event Details */}
+      <h3 className="text-md font-medium mb-2">{event.title}</h3>
+      <p className="text-sm text-[#7848F4]">{event.date}</p>
+      <p className="text-xs text-gray-500">{event.location}</p>
+    </div>
+  );
 }
