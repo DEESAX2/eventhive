@@ -6,36 +6,37 @@ export default function CreateEvent() {
             <Navbar />
             <section className="bg-gray-50 flex items-center justify-center min-h-screen">
                 <div className="max-w-4xl w-full mx-auto px-6 py-12 bg-white shadow-md rounded-lg">
-                    <h1 className="text-3xl text-center font-bold mb-8">Create Event</h1>
+                    <h1 className="text-big-heading text-center font-bold mb-8">Create Event</h1>
                     <form className="space-y-8">
-                        <div className="mb-4">
-                            <label className="block text-gray-700 font-medium mb-2">Event Title</label>
-                            <input type="text" className="w-full p-3 border border-gray-300 rounded-lg" placeholder="Enter your mail" />
-                        </div>
-                        <div className="mb-4">
-                            <label className="block mb-1 font-medium">Event Venue</label>
-                            <input type="text" placeholder="Enter your mail" class="w-full p-3 border border-gray-300 rounded-lg" />
-                        </div>
-                        <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label className="block mb-1 font-medium">Start time</label>
-                                <input type="text" placeholder="Enter your mail" class="w-full p-3 border border-gray-300 rounded-lg" />
+                            <div className="mb-4">
+                                <label className="block text-gray-700 font-medium mb-2">Event Title</label>
+                                <input type="text" className="w-full p-3 border border-gray-300 rounded-lg" placeholder="Enter event title" />
                             </div>
-                            <div>
-                                <label className="block mb-1 font-medium">End time</label>
-                                <input type="text" placeholder="Enter your mail" class="w-full p-3 border border-gray-300 rounded-lg" />
+                            <div className="mb-4">
+                                <label className="block mb-1 font-medium">Event Venue</label>
+                                <input type="text" placeholder="Enter event venue" class="w-full p-3 border border-gray-300 rounded-lg" />
                             </div>
-                        </div>
-                        <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label className="block mb-1 font-medium">Start date</label>
-                                <input type="text" placeholder="Enter your mail" class="w-full p-3 border border-gray-300 rounded-lg" />
+                            <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label className="block mb-1 font-medium">Start time</label>
+                                    <input type="time" placeholder="Enter your mail" class="w-full p-3 border border-gray-300 rounded-lg" />
+                                </div>
+                                <div>
+                                    <label className="block mb-1 font-medium">End time</label>
+                                    <input type="time" placeholder="Enter your mail" class="w-full p-3 border border-gray-300 rounded-lg" />
+                                </div>
                             </div>
-                            <div>
-                                <label className="block mb-1 font-medium">End date</label>
-                                <input type="text" placeholder="Enter your mail" class="w-full p-3 border border-gray-300 rounded-lg" />
+                            <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label className="block mb-1 font-medium">Start date</label>
+                                    <input type="date" placeholder="Enter your mail" class="w-full p-3 border border-gray-300 rounded-lg" />
+                                </div>
+                                <div>
+                                    <label className="block mb-1 font-medium">End date</label>
+                                    <input type="date" placeholder="Enter your mail" class="w-full p-3 border border-gray-300 rounded-lg" />
+                                </div>
                             </div>
-                        </div>
+
                         <h2 className="text-2xl font-semibold text-center mt-12">Event Description</h2>
                         <div className="mb-4">
                             <label className="block text-gray-700 mb-2">Event Image</label>

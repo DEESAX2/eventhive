@@ -1,32 +1,39 @@
+import event from "../assets/images/event.png";
+
+
 export default function EventDetail() {
     return (
         <div className="font-sans text-gray-800 bg-gray-50">
             {/* Hero Section */}
-            <section className="relative">
+            <section className="relative w-[90%] mx-auto">
                 <img
-                    src="/event-hero.jpg" // Replace with actual image path
+                    src={event} // Replace with actual image path
                     alt="Event"
                     className="w-full h-[400px] object-cover"
                 />
                 {/* Event Details Overlay */}
-                <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center px-12 text-white">
-                    <button className="mb-6 flex item-center font-medium mt-10 text-sm bg-purple-600 px-4 py-1 rounded w-fit">Back</button>
-                    <h2 className="text-4xl text-white font-bold mb-8">Dream world wide in jakatra</h2>
-                    <p className="text-xl mb-2">IIIT Sonepat</p>
-                    <p className="mt-2 text-sm mb-8 max-w-xl">
-                        DesignHub organized a 3D Modeling Workshop using Blender on 16th February at 5 PM. The workshop taught participants the magic of creating stunning 3D models and animations using Blender. It was suitable for both beginners and experienced users. The event was followed by a blender-render competition, which added to the excitement.
-                    </p>
-                </div>
+                <div className="flex items-center justify-around absolute inset-0 bg-black/50">
+                    <div className="flex flex-col justify-center text-white">
+                        <button className="mb-10 flex item-center font-medium mt-1 text-sm bg-purple-600 px-4 py-1 rounded w-fit">&larr; Back</button>
+                        <h2 className="text-4xl text-white font-bold mb-8">Dream world wide
+                            <span className="block mt-3">in jakatra</span></h2>
+                        <p className="text-xl mb-2 font-semibold mt-4">IIIT Sonepat</p>
+                        <p className="mt-2 text-sm max-w-xl">
+                            DesignHub organized a 3D Modeling Workshop using Blender on 16th February at 5 PM. The workshop taught participants the magic of creating stunning 3D models and animations using Blender. It was suitable for both beginners and experienced users. The event was followed by a blender-render competition, which added to the excitement.
+                        </p>
+                        <a href="#" class="mt-4 inline-block text-white underline">View map</a>
+                    </div>
 
 
-                {/* Date & Time Card */}
-                <div className="absolute top-6 right-6 bg-white text-black p-6 rounded shadow-lg w-64">
-                    <p className="text-sm text-gray-500">Date & time</p>
-                    <p className="font-semibold mt-1 mb-4">Saturday, March 18 2023, 9:30PM</p>
-                    <a href="#" className="text-sm text-purple-600 mb-3 block">Add to calendar</a>
-                    <button className="bg-purple-600 text-white w-full py-2 rounded mb-2">Book now</button>
-                    <button className="bg-gray-200 w-full py-2 rounded text-sm mb-1">Program promoter</button>
-                    <p className="text-xs text-gray-500 text-center">No Refunds</p>
+                    {/* Date & Time Card */}
+                    <div className="bg-white text-black p-6 rounded shadow-lg w-64">
+                        <p className="text-lg font-semibold text-black mb-2">Date & time</p>
+                        <p className="text-gray-500 text-sm mt-1 mb-4">Saturday, March 18 2023, 9:30PM</p>
+                        <a href="#" className="text-sm text-purple-600 mb-3 block">Add to calendar</a>
+                        <button className="bg-purple-600 text-white w-full py-2 rounded mb-2">Book now</button>
+                        <button className="bg-gray-200 w-full py-2 rounded text-sm mb-1">Program promoter</button>
+                        <p className="text-xs text-gray-500 text-center">No Refunds</p>
+                    </div>
                 </div>
             </section>
 
