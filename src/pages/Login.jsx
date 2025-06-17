@@ -10,7 +10,7 @@ export default function Login() {
             <div className="flex min-h-screen bg-white">
                 {/* Left Column: Login In Form */}
                 <div className="w-1/2 flex flex-col justify-center items-center p-8 lg:p-16"> 
-                    <h4 className="text-2xl font-bold mb-8 text-black">Event Hive</h4> 
+                    <h4 className="text-2xl font-bold mb-8"><span className='text-purple-600'>Event</span> <span className=''>Hive</span></h4> 
                     <h1 className="text-4xl font-semibold mb-16 text-black">Sign In to Event Hive</h1> 
 
                     <form className="w-full max-w-sm"> 
@@ -60,7 +60,7 @@ export default function Login() {
                     <div className="relative z-10 text-center" >
                         <h1 className="text-5xl font-bold mb-4">Hello Friend</h1>
                         <p className="text-lg mb-8">To keep connected with us provide us with your information</p>
-                        <button className="bg-zinc-600 text-event-purple-dark px-6 py-2 rounded font-semibold hover:bg-gray-100 transition-colors duration-200">
+                        <button className="bg-zinc-400 text-event-purple-dark px-6 py-2 rounded font-semibold  transition-colors duration-200">
                             Sign up
                         </button>
                     </div>
