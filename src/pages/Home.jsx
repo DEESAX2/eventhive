@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import HeroWithFilter from "../components/HeroWithFilter";
@@ -38,9 +39,8 @@ export default function Home() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua.
                 </p>
-                <button className=" inline-block  px-10 py-4  bg-primary   text-white font-bold text-lg rounded-md  shadow-xl hover:brightness-110 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-[#7848F4] focus:ring-opacity-50">
-                 Create Events
-                </button>
+                <button className=" inline-block  px-10 py-4  bg-primary   text-white font-bold text-lg rounded-md  shadow-xl hover:brightness-110 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-[#7848F4] focus:ring-opacity-50"><Link to= "/create-event">
+                 Create Events</Link></button>
                 </div>
                 </div>
                 </div>
