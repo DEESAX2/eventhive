@@ -20,6 +20,10 @@ export default function CreateEvent() {
         } catch (error) {
             console.log(error);
         }
+    };
+
+    if(!localStorage.getItem("ACCESS_TOKEN")) {
+        return <navigate to={"/login"}/>
     }
 
 
