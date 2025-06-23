@@ -1,4 +1,6 @@
 import { Facebook, Instagram, Linkedin } from "lucide-react";
+import NotFound from "../pages/NotFound";
+import { Link } from "react-router";
 
 export default function Footer() {
     return (
@@ -10,7 +12,7 @@ export default function Footer() {
                 <button className="bg-primary rounded-md py-2 px-4" type="submit">Subscribe</button>
             </form>
             <div className="flex justify-center gap-8 py-4">
-                <span>Home</span>
+                <span> <Link to="*">Home</Link></span>
                 <span>About</span>
                 <span>Service</span>
                 <span>Get in Touch</span>
